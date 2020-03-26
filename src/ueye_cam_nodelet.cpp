@@ -1148,7 +1148,7 @@ void UEyeCamNodelet::loadIntrinsicsFile() {
   }
 
   if (camera_calibration_parsers::readCalibration(cam_intr_filename_, cam_name_, ros_cam_info_)) {
-    DEBUG_STREAM("Loaded intrinsics parameters for [" << cam_name_ << "]");
+    INFO_STREAM("Loaded intrinsics parameters for [" << cam_name_ << "]");
   }
   ros_cam_info_.header.frame_id = frame_name_;
 }
